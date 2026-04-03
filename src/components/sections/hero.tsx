@@ -10,27 +10,19 @@ import { cn } from "@/lib/utils";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-      {/* Background base */}
-      <div className="absolute inset-0 z-0 bg-[#050505]" />
-
-      {/* Vehicle image on the right */}
-      <div className="absolute inset-0 z-[1]">
-        <div className="absolute top-0 right-0 bottom-0 w-full md:w-[65%] md:left-auto">
-          <Image
-            src="https://images.unsplash.com/photo-1587813369290-091c9d432daf?q=80&w=2070&auto=format&fit=crop"
-            alt="Flotte de vehicules utilitaires"
-            fill
-            priority
-            className="object-cover object-center"
-            sizes="(max-width: 768px) 100vw, 65vw"
-          />
-        </div>
-        {/* Gradient overlays for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/95 to-transparent md:w-[55%]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#050505]/40 to-[#050505]/20 hidden md:block" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/50" />
-        {/* Mobile overlay for readability */}
-        <div className="absolute inset-0 bg-[#050505]/60 md:hidden" />
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://images.unsplash.com/photo-1587813369290-091c9d432daf?q=80&w=2070&auto=format&fit=crop"
+          alt="Flotte de vehicules utilitaires"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-[#050505]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/90 via-[#050505]/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent" />
       </div>
 
       {/* Content */}
