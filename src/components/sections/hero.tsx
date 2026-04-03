@@ -17,8 +17,8 @@ export function Hero() {
       <div className="absolute inset-0 z-[1]">
         <div className="absolute top-0 right-0 bottom-0 w-full md:w-[65%] md:left-auto">
           <Image
-            src="https://images.unsplash.com/photo-1632865043945-80f9cfab4404?q=80&w=2070&auto=format&fit=crop"
-            alt="Vehicule utilitaire type Sprinter"
+            src="https://images.unsplash.com/photo-1587813369290-091c9d432daf?q=80&w=2070&auto=format&fit=crop"
+            alt="Flotte de vehicules utilitaires"
             fill
             priority
             className="object-cover object-center"
