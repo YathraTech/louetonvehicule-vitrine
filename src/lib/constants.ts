@@ -23,8 +23,8 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-  { label: "La Flotte", href: "#flotte" },
-  { label: "Avantages", href: "#avantages" },
+  { label: "Louer", href: "#louer" },
+  { label: "Acheter", href: "#acheter" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
