@@ -9,19 +9,28 @@ import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-16">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg"
-          alt="Flotte de vehicules utilitaires Louetonvehicule"
-          fill
-          priority
-          className="object-cover opacity-40 mix-blend-luminosity"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/80 to-transparent md:w-2/3" />
+    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
+      {/* Background base */}
+      <div className="absolute inset-0 z-0 bg-[#050505]" />
+
+      {/* Vehicle image on the right */}
+      <div className="absolute inset-0 z-[1]">
+        <div className="absolute top-0 right-0 bottom-0 w-full md:w-[65%] md:left-auto">
+          <Image
+            src="https://images.unsplash.com/photo-1632865043945-80f9cfab4404?q=80&w=2070&auto=format&fit=crop"
+            alt="Vehicule utilitaire type Sprinter"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="(max-width: 768px) 100vw, 65vw"
+          />
+        </div>
+        {/* Gradient overlays for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/95 to-transparent md:w-[55%]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#050505]/40 to-[#050505]/20 hidden md:block" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/50" />
+        {/* Mobile overlay for readability */}
+        <div className="absolute inset-0 bg-[#050505]/60 md:hidden" />
       </div>
 
       {/* Content */}

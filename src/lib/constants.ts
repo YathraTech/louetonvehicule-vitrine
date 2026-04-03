@@ -123,7 +123,7 @@ export const VEHICLES: Vehicle[] = [
   },
 ];
 
-export const FLEET_FILTERS = ["Tous", "Fourgons", "Frigorifiques"] as const;
+export const FLEET_FILTERS = ["Tous", "Fourgons"] as const;
 
 export const FOOTER_LINKS = {
   services: [
@@ -136,7 +136,6 @@ export const FOOTER_LINKS = {
     { label: "Petits volumes", href: "#" },
     { label: "Grands volumes", href: "#" },
     { label: "Camions bennes", href: "#" },
-    { label: "Vehicules frigorifiques", href: "#" },
   ],
   societe: [
     { label: "A propos", href: "#" },
