@@ -29,10 +29,10 @@ export const NAV_LINKS = [
 ] as const;
 
 export const STATS = [
-  { value: "150+", label: "Vehicules en flotte" },
-  { value: "24/7", label: "Assistance incluse" },
-  { value: "-2 ans", label: "Age moyen parc" },
-  { value: "100%", label: "Pro revises" },
+  { value: "24/7", label: "Assistance depannage" },
+  { value: "0€", label: "Frais de dossier" },
+  { value: "Pro", label: "Vehicules revises & garantis" },
+  { value: "J+1", label: "Disponibilite rapide" },
 ] as const;
 
 export const FEATURES = [

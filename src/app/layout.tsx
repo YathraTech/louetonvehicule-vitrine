@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Louetonvehicule",
   },
   description:
-    "Louez ou achetez des vehicules utilitaires d'occasion premium pour professionnels. Flotte de plus de 150 vehicules, assistance 24/7, vehicules de moins de 2 ans. Fourgons, camions.",
+    "Louez ou achetez des vehicules utilitaires d'occasion premium pour professionnels. Assistance 24/7, vehicules revises et garantis, disponibilite rapide. Fourgons, camions.",
   keywords: [
     "location vehicule utilitaire",
     "vente utilitaire occasion",
