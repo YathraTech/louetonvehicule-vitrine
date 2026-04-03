@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
-import { NAV_LINKS, SITE } from "@/lib/constants";
+import { SITE } from "@/lib/constants";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -27,37 +27,23 @@ export function Navbar() {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
-          <div className="flex items-center gap-6 text-sm font-medium text-zinc-400">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="hover:text-white transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-          <div className="h-4 w-px bg-white/10" />
-          <div className="flex items-center gap-4">
-            <Link
-              href="#acheter"
-              className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
-            >
-              Acheter
-            </Link>
-            <Link
-              href="#louer"
-              className={cn(
-                buttonVariants({ size: "sm" }),
-                "rounded-full gap-2"
-              )}
-            >
-              Louer
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
+        <div className="hidden md:flex items-center gap-4">
+          <Link
+            href="#acheter"
+            className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
+          >
+            Acheter
+          </Link>
+          <Link
+            href="#louer"
+            className={cn(
+              buttonVariants({ size: "sm" }),
+              "rounded-full gap-2"
+            )}
+          >
+            Louer
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -85,17 +71,6 @@ export function Navbar() {
             className="md:hidden border-t border-white/5 bg-[#050505]/95 backdrop-blur-xl overflow-hidden"
           >
             <div className="px-6 py-6 flex flex-col gap-4">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="text-sm font-medium text-zinc-400 hover:text-white transition-colors py-2"
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <div className="h-px bg-white/5 my-2" />
               <Link
                 href="#acheter"
                 onClick={() => setMobileOpen(false)}
